@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "Show Hacker News Tab",
 	"version": "0.1",
-	"description": "Displays 'Show [H]acker [N]ews' posts on every new tab.",
+	"description": "Displays 'Show [H]acker [N]ews' posts on every new tab. https://github.com/Iskander0/showhn-tab.",
 	"author": "Agathon",
 	"chrome_url_overrides": {
 		"newtab": "index.html"
