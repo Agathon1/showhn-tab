@@ -31,7 +31,7 @@ if (!localStorage.getItem("1")) {
 	document.querySelector("#panel").innerHTML = localStorage.getItem("1");
 }
 
-if (Math.floor(Math.random() * 51) === 5) {
+if (Math.floor(Math.random() * 41) === 5) {
 	localStorage.removeItem("1");
 }
 
