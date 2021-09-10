@@ -23,7 +23,7 @@ body {
 
 #panel {
 	padding: 10px;
-	width: 50vw;
+	width: 55vw;
 	height: 85%;
 	color: white;
 	
@@ -41,5 +41,12 @@ li {
 }
 a {
 	text-decoration: none;
+}
+.readStory {
 	color: orange;
+}
+.readComments {
+	color: #3d3d3d;
+	float: right;
+	font-size: 90%;
 }

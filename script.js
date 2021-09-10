@@ -14,7 +14,7 @@ if (!localStorage.getItem("1")) {
 			stories = stories.substring(1);
 			stories = stories.substring(0, stories.length - 1);
 			stories = stories.split(",");
-			for (let i = 0; i <= 24; i++) {
+			for (let i = 0; i <= 23; i++) {
 				fetch("https://hacker-news.firebaseio.com/v0/item/" + stories[i] + ".json")
 					.then(response => response.json())
 					.then((response) => {
@@ -22,7 +22,7 @@ if (!localStorage.getItem("1")) {
 						handle2 = JSON.stringify(response.url);
 						handle2 = handle2.substring(1);
 						handle2 = handle2.substring(0, handle2.length - 1);
-						handle1.innerHTML = "<a href='" + handle2 + "'> READ</a>       " + JSON.stringify(response.title).substring(10).replace('"', ' ');
+						handle1.innerHTML = "<a class='readStory' href='" + handle2 + "'> READ</a>       " + JSON.stringify(response.title).substring(10).replace('"', ' ') + "<a class='readComments' href='https://news.ycombinator.com/item?id=" + stories[i] + "'> comments </a>";
 						storyDiv.appendChild(handle1);
 					})
 			}	
@@ -37,5 +37,4 @@ if (Math.floor(Math.random() * 41) === 5) {
 
 setTimeout( function() { 
 	localStorage.setItem("1", document.querySelector("#panel").innerHTML);
-}, 1500);
-
+}, 2000);
