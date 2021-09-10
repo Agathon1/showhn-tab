@@ -31,10 +31,10 @@ if (!localStorage.getItem("1")) {
 	document.querySelector("#panel").innerHTML = localStorage.getItem("1");
 }
 
-if (Math.floor(Math.random() * 2) === 1) {
+if (Math.floor(Math.random() * 41) === 5) {
 	localStorage.removeItem("1");
 }
 
 setTimeout( function() { 
 	localStorage.setItem("1", document.querySelector("#panel").innerHTML);
-}, 1500);
+}, 2000);
